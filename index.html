@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="js/main.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Mi Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Sobre Mí</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-post">
+      <h2>Título de la Entrada</h2>
+      <p>Fecha de Publicación</p>
+      <article>
+        <p>Este es el contenido de tu entrada de blog. Aquí puedes escribir sobre tus pensamientos, experiencias, o cualquier tema de interés.</p>
+      </article>
+      <button class="comment-toggle">Mostrar/Ocultar Comentarios</button>
+      <div class="comments-section" style="display: none;">
+        <input type="text" placeholder="Escribe tu comentario aquí">
+        <button class="add-comment">Añadir Comentario</button>
+        <ul class="comments-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Categorías</h2>
+    <ul>
+      <li><a href="#">Categoría 1</a></li>
+      <li><a href="#">Categoría 2</a></li>
+      <li><a href="#">Categoría 3</a></li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>&copy; 2024 Mi Blog</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
