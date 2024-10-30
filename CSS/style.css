@@ -1,16 +1,36 @@
 body{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+    transition: all 1.5s ease;
 }
 
+
+
+
+#toggle{
+    display: none;
+}
+#label_toggle{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: 2em;
+    color: rgb(99, 94, 103);
+    cursor: pointer;
+}
+.dark{
+    background-color: #333;
+    color: white;
+    transition: all 1.5s ease;
+}
 
 header {
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+
 }
-
-
 /* NAVEGADOR */
 nav ul{
     display: flex;
@@ -52,6 +72,7 @@ nav a{
     display: flex;
     width: auto;
     height: 500px;
+
 }
 
 
@@ -96,7 +117,60 @@ input[type="text"] {
     background-color: #0056b3;
 }
 
+/* FORMULARIO */
 
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+.contact-form {
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form__item {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form__item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form__item input,
+  .contact-form__item textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #0056b3
+  }
 footer{
     display: flex;
     flex-direction: column;
